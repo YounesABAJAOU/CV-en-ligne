@@ -1,140 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 body{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat bottom; 
+  background-size: cover;
+  background-color: #464646;
+  position: relative;
+  z-index: 110;
+  color: #00FEA5;
+}
+
+header h1{
+  position: fixed;
+  font-weight: bolder;
+  left: 10px;
+  top: 23px;
+  z-index: 120;
+  font-size: 30px;
+}
+header .dl{
+  position: absolute;
+  bottom: 70px;
+  left: 10%;
+  transform: translate(-40%,-10%);
+}
+header .dl h2.hi {
+  font-size: 80px;
+  font-weight: 700;
+}
+header .dl p.name {
+  font-size: 46px;
+}
+header .dl p.stage {
+  font-size: 22px;
+  font-weight: 300;
+}
+header nav{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+header nav ul{
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+header nav ul li{
+  display: inline-block;
+  padding: 20px;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: #00FEA5;
+  font-weight: bold;
+  font-size: 20px;
+}
+header nav ul li a:hover{
+  font-size: 25px;
+  color: #00FEA5;
+}
+nav.scroll ul{
+  background: #000;
+}
+
+.hamburg{
+  display: none;
+  color: #00FEA5;
+  background: black;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: right;
+  padding: 15px 24px;
+}
+
+@media(max-width:1768px){
+  .pdp{
     width: 100%;
-  }
-  
-  header h1{
-    position: fixed;
-    color: white;
-    font-weight: bolder;
-    left: 10px;
-    top: 23px;
-    z-index: 120;
-    font-size: 30px;
-  }
-  
-  header{
-    width: 100%;
-    height: 100vh;
-    background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat bottom; 
-    background-size: cover;
-    background-color: #464646;
-    position: relative;
-    z-index: 110;
-    color: white;
   }
   header .dl{
-    position: absolute;
-    bottom: 70px;
-    left: 10%;
-    transform: translate(-40%,-10%);
+    transform: translate(-10%,-10%);
   }
-  header .dl h2.hi {
-    font-size: 80px;
-    font-weight: 700;
-  }
-  header .dl p.name {
-    color: #fff;
-    font-size: 46px;
-  }
-  header .dl p.stage {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 300;
+  .hamburg{
+    display: block;
   }
 
-  nav{
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-  }
-  
   nav ul{
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    transition: 1s;
-    overflow: hidden;
-  }
-  
-  nav ul li{
-    display: inline-block;
-    padding: 20px;
-  }
-  
-  nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  nav ul li a:hover{
-    font-size: 25px;
-    color: white;
-  }
-
-  nav.scroll ul{
+    max-height: 0px;
     background: #000;
   }
-  
-  .hamburg{
-    display: none;
-    color:white;
-    background: black;
+
+  .menu{
+    max-height: 30em;
+  }
+
+  nav ul li{
     width: 100%;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-align: right;
-    padding: 15px 24px;
+    padding: 24px 0;
   }
+}
 
-  @media(max-width:1768px){
-    .pdp{
-      width: 100%;
-    }
-    header .dl{
-      transform: translate(-10%,-10%);
-    }
-    .hamburg{
-      display: block;
-    }
+.about{
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
 
-    nav ul{
-      max-height: 0px;
-      background: #000;
-    }
-  
-    .menu{
-      max-height: 30em;
-    }
-  
-    nav ul li{
-      width: 100%;
-      padding: 24px 0;
-    }
-  }
-  
-  main p{
-    color: black;
-  }
+.skills{
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
 
-  body main img{
-    border-radius: 10px;
-  }
-  
-  .progress-container {
-    width: 100%;
-    height: 8px;
-    background: black;
-  }
-  
-   header .progress-bar {
-    height: 8px;
-    background: white;
-    width: 0%;
-  }
+.education{
+  background-color: whitesmoke;
+}
+
+.portfolio{
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+.experience{
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.contact{
+  background-color: whitesmoke;
+}
+
+main p{
+  color: black;
+}
+
+body main img{
+  border-radius: 10px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: black;
+}
+
+header .progress-bar {
+  height: 8px;
+  background-color: #00FEA5;
+  width: 0%;
+}
+
+main .progress-bar {
+  background-color: #00FEA5;
+  width: 0%;
+}
+
 
 /* timeline */
 *, ::before, ::after {
@@ -145,8 +169,6 @@ body{
 
 .box-timeline {
   width: 100%;
-  height: 1500px;
-  background: #f1f1f1;
   position: relative;
   padding: 80px 0 250px 0;
   margin-bottom: 100px;
@@ -293,11 +315,9 @@ body{
     font-weight: 700;
   }
   header .dl p.name {
-    color: #fff;
     font-size: 26px;
   }
   header .dl p.stage {
-    color: #fff;
     font-size: 15px;
     font-weight: 300;
   }
@@ -305,16 +325,7 @@ body{
 
 /* contact */
 
-.space-between{
-  text-align: justify;
-}
-
-.space-between .item{
-  display: inline-block;
-}
-
 .contact-box {
-  width: 24%;
   text-align: center;
   padding: 30px;
   border-radius: 15px;
@@ -327,16 +338,20 @@ body{
 
 .phone{
   color: #000;
+  
 }
 
 .email{
   color: #000;
+  
 }
 
 .linkedin{
   color: #000;
+  
 }
 
 .city{
   color: #000;
+  
 }
