@@ -286,7 +286,7 @@ body{
   }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 395px) {
 
   header .dl h2.hi {
     font-size: 50px;
@@ -298,7 +298,7 @@ body{
   }
   header .dl p.stage {
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
   }
 }
@@ -309,3 +309,34 @@ body{
   text-align: justify;
 }
 
+.space-between .item{
+  display: inline-block;
+}
+
+.contact-box {
+  width: 24%;
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.contact-box i {
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.phone{
+  color: #000;
+}
+
+.email{
+  color: #000;
+}
+
+.linkedin{
+  color: #000;
+}
+
+.city{
+  color: #000;
+}
