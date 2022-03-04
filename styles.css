@@ -67,6 +67,7 @@ header nav ul li a{
 }
 header nav ul li a:hover{
   font-size: 25px;
+  text-decoration: underline;
   color: #00FEA5;
 }
 nav.scroll ul{
@@ -354,4 +355,21 @@ main .progress-bar {
 .city{
   color: #000;
   
+}
+
+.btn-arrow{
+  height: 70px;
+  width: 70px;
+  background:#00FEA5;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px #03d189;
+}
+
+.btn-arrow:hover{
+  box-shadow: 0 4px #03d189;
+  bottom: 6px;
 }

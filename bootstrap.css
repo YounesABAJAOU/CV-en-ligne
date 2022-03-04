@@ -5370,8 +5370,11 @@ textarea.form-control-lg {
   border-color: #141619;
 }
 
-.btn-close {
+.btn-close{
   box-sizing: content-box;
+  position: absolute;
+  right: 15px;
+  top: 15px;
   width: 1em;
   height: 1em;
   padding: 0.25em 0.25em;
@@ -5538,7 +5541,7 @@ textarea.form-control-lg {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem 1rem;
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);

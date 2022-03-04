@@ -59,3 +59,16 @@ $(window).on("scroll", function(){
             $('nav').removeClass('scroll');
             }
 })
+
+// bouton pour remonter en haut de la page
+const btn = document.querySelector('.btn-arrow');
+
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
