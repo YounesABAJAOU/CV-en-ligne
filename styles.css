@@ -16,6 +16,7 @@ header{
   position: relative;
   z-index: 110;
   color: #00FEA5;
+  background-attachment: fixed;
 }
 header h1{
   position: fixed;
@@ -214,7 +215,7 @@ main .progress-bar {
   padding: 20px;
   border-radius: 3px;
   height: auto;
-  background: #f1f1f1;
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
   box-shadow: 0 10px 15px rgba(0,0,0,0.5);
   position: absolute;
   left: 50%;
@@ -378,4 +379,54 @@ main .progress-bar {
 .btn-arrow:hover{
   box-shadow: 0 4px #03d189;
   bottom: 6px;
+}
+/* parallax */
+#para1{
+  background: url("https://images.pexels.com/photos/34600/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#para2{
+  background: url("https://images.pexels.com/photos/923307/pexels-photo-923307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#para3{
+  background: url("https://images.pexels.com/photos/923307/pexels-photo-923307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#para4{
+  background: url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#para5{
+  background: url("https://images.pexels.com/photos/1111692/pexels-photo-1111692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
