@@ -86,6 +86,19 @@ nav.scroll ul{
   padding: 15px 24px;
 }
 
+@media (min-width:1600px){
+  .about{
+    height: 100vh;
+  }
+  
+  .skills{
+    height: 100vh;
+  }
+
+  .education{
+    height: 80vh;
+  }
+}
 @media(max-width:1599px){
   .pdp{
     width: 100%;
@@ -382,9 +395,9 @@ main .progress-bar {
 }
 /* parallax */
 #para1{
-  background: url("https://images.pexels.com/photos/34600/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/1174746/pexels-photo-1174746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -392,9 +405,9 @@ main .progress-bar {
 }
 
 #para2{
-  background: url("https://images.pexels.com/photos/923307/pexels-photo-923307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -402,9 +415,9 @@ main .progress-bar {
 }
 
 #para3{
-  background: url("https://images.pexels.com/photos/923307/pexels-photo-923307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -412,9 +425,9 @@ main .progress-bar {
 }
 
 #para4{
-  background: url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/1646735/pexels-photo-1646735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -422,11 +435,11 @@ main .progress-bar {
 }
 
 #para5{
-  background: url("https://images.pexels.com/photos/1111692/pexels-photo-1111692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/1009136/pexels-photo-1009136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
-  height: 200px;
+  height: 455px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 100%; 
 }
