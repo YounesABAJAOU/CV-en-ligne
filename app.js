@@ -72,3 +72,38 @@ btn.addEventListener('click', () => {
     })
 
 })
+
+// scroll bar personnalisée
+
+const progressBar = document.querySelector('.scrollbar');
+
+let totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener('scroll', () => {
+    let progress = (document.documentElement.scrollTop / totalHeight) * 100;
+    progressBar.style.height = `${progress}%`;
+    progressBar.style.opacity = `${progress}%`;
+})
+
+// clique a la barre de progression 
+
+const progressBarClick = document.querySelector('.clickScrollbar');
+
+progressBarClick.addEventListener('click',(e) => {
+
+    let newPageScroll = e.clientY / progressBarClick.offsetHeight * totalHeight;
+    window.scrollTo({
+        top: newPageScroll,
+        behavior: 'smooth',
+    })
+})
+
+// bouton invisible en haut de page et visible en descendant
+$(window).on("scroll", function(){
+    if($(window).scrollTop()){
+        btn.style.opacity = 1;
+}
+            else{
+            btn.style.opacity = 0;
+            }
+})

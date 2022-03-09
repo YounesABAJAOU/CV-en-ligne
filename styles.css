@@ -14,7 +14,6 @@ header{
   background-size: cover;
   background-color: #464646;
   position: relative;
-  z-index: 110;
   color: #00FEA5;
   background-attachment: fixed;
 }
@@ -25,6 +24,7 @@ header h1{
   top: 30px;
   z-index: 120;
   font-size: 22px;
+  z-index: 1000;
 }
 header .dl{
   position: absolute;
@@ -380,22 +380,24 @@ main .progress-bar {
 .btn-arrow{
   height: 60px;
   width: 60px;
-  background:#00FEA5;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
   border-radius: 50%;
   position: fixed;
-  right: 10px;
+  right: 17px;
   bottom: 10px;
   cursor: pointer;
   box-shadow: 0 6px #03d189;
+  opacity: 0;
 }
 
 .btn-arrow:hover{
   box-shadow: 0 4px #03d189;
   bottom: 6px;
 }
+
 /* parallax */
 #para1{
-  background: url("https://images.pexels.com/photos/1174746/pexels-photo-1174746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.unsplash.com/photo-1623934199716-dc28818a6ec7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -405,33 +407,33 @@ main .progress-bar {
 }
 
 #para2{
-  background: url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/750913/pexels-photo-750913.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 80% 50%;;
 }
 
 #para3{
-  background: url("https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/750913/pexels-photo-750913.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 80% 50%;;
 }
 
 #para4{
-  background: url("https://images.pexels.com/photos/1646735/pexels-photo-1646735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/2277980/pexels-photo-2277980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   width: 100%;
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 60% 50%;
 }
 
 #para5{
@@ -441,5 +443,31 @@ main .progress-bar {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50% 100%; 
+  background-position: 70% 100%; 
+}
+
+/* changement couleur scollbar */
+::-webkit-scrollbar{
+  width: 0;
+
+}
+
+.scrollbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 0;
+  opacity: 0;
+  background-image: linear-gradient(to top, #00ff8c 0%, #055f97 100%);
+}
+
+.clickScrollbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.301);
+  z-index: 99;
 }
